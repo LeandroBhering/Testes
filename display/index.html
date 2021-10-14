@@ -6,7 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display</title>
 </head>
+<style>
+    .d-flex-box{
+        background-color: lightcoral;
+        height: 300px;
+        display: flex;
+        flex-direction: row; /* row, column, row-reverse, column-reverse*/
+        flex-wrap: wrap; /* no-wrap, wrap, wrap-reverse */
+        justify-content: center; /* flex-start, flex-end, space-around, space-between, center */
+        align-items: center; /* flex-start, flex-end, center, stretch, baseline */
+    }
+    .d-flex-child{
+        background-color: lightblue;
+        width: 100px;
+        height: 100px;
+        flex-grow: 0;     /* Ocupa o resto da largura da div */
+        flex-shrink: 1;   /* Encolhe a div */
+        flex-basis: auto; /* Define um width de cada elemento caso não tenha */
+        flex: 0 1 auto; /* Forma curta de escrever as 3 propriedades anteriores */
+    }
+    .d-inline{
+        display: inline;
+        background-color: lightblue;
+        width: 100px;   /* NÃO FUNCIONA */
+        height: 100px;  /* NÃO FUNCIONA */
+    }
+    .d-block {
+        display: block;
+        background-color: lightblue;
+        margin-bottom: 5px;
+        width: 100px;
+        height: 100px;
+    }
+    .d-inline-block {
+        display: inline-block;
+        background-color: lightblue;
+        width: 100px;
+        height: 100px;
+    }
+</style>
 <body>
-    
+    <h1>Display Flex (O Monstro)</h1>
+    <div class="d-flex-box">
+        <div class="d-flex-child">Display 1</div>
+        <div class="d-flex-child">Display 2</div>
+        <div class="d-flex-child">Display 3</div>
+    </div>
+        <h1>Display Inline</h1>
+        <div class="d-inline">Display 1</div>
+        <div class="d-inline">Display 2</div>
+        <div class="d-inline">Display 3</div>
+        <h1>Display Block</h1>
+        <div class="d-block">Display 1</div>
+        <div class="d-block">Display 2</div>
+        <div class="d-block">Display 3</div>
+        <h1>Display Inline-Block</h1>
+        <div class="d-inline-block">Display 1</div>
+        <div class="d-inline-block">Display 2</div>
+        <div class="d-inline-block">Display 3</div>
+        
+
 </body>
 </html>
