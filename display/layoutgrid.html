@@ -69,6 +69,14 @@
         grid-row: 2/5;
         display: block;
     }
+    @media (max-width: 600px){
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .grid > div:nth-child(n + 4){
+            display: block;
+        }
+    }
 </style>
 <body>
     <header class="header">
