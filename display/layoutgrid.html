@@ -7,9 +7,50 @@
     <title>Layout Grid CSS</title>
 </head>
 <style>
-    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 10px;
+    }
+    ul, li, p {
+        list-style: none;
+        font: normal 1.2rem Arial;
+        color: #fff;
+    }
+    .header {
+        background-color: #141518;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;    
+    }
+    .menu li {
+        margin-right: 10px;
+    }
 </style>
 <body>
-    
+    <header class="header">
+        <p>Logo</p>
+        <nav>
+            <ul  class="menu">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+
 </body>
 </html>
