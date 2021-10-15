@@ -11,6 +11,9 @@
         margin: 0;
         padding: 0;
     }
+    #logo {
+        color: #fff;
+    }
     a {
         text-decoration: none;
         color: white;
@@ -20,7 +23,6 @@
     ul, li, p {
         list-style: none;
         font: normal 1.2rem Arial;
-        color: #fff;
     }
     .header {
         background-color: #141518;
@@ -39,10 +41,38 @@
     .menu li {
         margin-right: 10px;
     }
+    .img {
+        background-color: #202124;
+        max-width: 300px;
+        min-height: 150px;
+    }
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+        font: bold 2em Arial;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+        max-width: 1000px;
+        grid-gap: 20px;
+    }
+    .grid > div:nth-child(n + 4) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        align-items: center;
+    }
+    .grid > div.anuncio {
+        grid-column: 1;
+        grid-row: 2/5;
+        display: block;
+    }
 </style>
 <body>
     <header class="header">
-        <p>Logo</p>
+        <p id="logo">Logo</p>
         <nav>
             <ul  class="menu">
                 <li><a href="#">Sobre</a></li>
@@ -51,6 +81,48 @@
             </ul>
         </nav>
     </header>
-
+    <h1>Imagens</h1>
+    <section class="grid">
+        <div class="cont">
+            <div class="img"></div>
+            <p>Legenda</p>
+        </div>
+        <div class="cont">
+            <div class="img"></div>
+            <p>Legenda</p>
+        </div>
+        <div class="cont">
+            <div class="img"></div>
+            <p>Legenda</p>
+        </div>
+        <div class="cont">
+            <div class="img"></div>
+            <p>Legenda</p>
+        </div>
+        <div class="cont">
+            <div class="img"></div>
+            <p>Legenda</p>
+        </div>
+        <div class="cont">
+            <div class="img"></div>
+            <p>Legenda</p>
+        </div>
+        <div class="cont">
+            <div class="img"></div>
+            <p>Legenda</p>
+        </div>
+        <div class="cont">
+            <div class="img"></div>
+            <p>Legenda</p>
+        </div>
+        <div class="cont">
+            <div class="img"></div>
+            <p>Legenda</p>
+        </div>
+        <div class="anuncio">
+            <div class="img"></div>
+            <p>Anuncio</p>
+        </div>
+    </section>
 </body>
 </html>
