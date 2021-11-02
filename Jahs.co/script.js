@@ -1,9 +1,17 @@
-const texto = document.getElementById('texto')
+const display = document.getElementById('display')
 const rei = document.getElementById('rei')
 const rainha = document.getElementById('rainha')
+const texto = document.querySelector('.textBox')
+
+
 
 rei.style.visibility = 'visible'
 rainha.style.visibility ='visible'
+
+function mudarTexto(){
+    display.innerHTML = texto.value
+    texto.value = ""
+}
 
 function esconder() {
     if((rei.style.visibility == 'visible') && (rainha.style.visibility == 'visible')){
@@ -16,7 +24,7 @@ function esconder() {
 }
 
 function mudarCor() {
-    texto.style.color = gerarCorAleatoria()
+    display.style.color = gerarCorAleatoria()
     rei.style.color = gerarCorAleatoria()
     rainha.style.color = gerarCorAleatoria()
 }
