@@ -38,3 +38,4 @@ function gerarCorAleatoria() {
 
 setInterval(() => mudarCor(), 100)
 
+ 
