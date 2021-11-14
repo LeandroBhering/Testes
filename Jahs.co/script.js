@@ -10,7 +10,6 @@ rainha.style.visibility ='visible'
 
 function mudarTexto(){
     display.innerHTML = texto.value
-    texto.value = ""
 }
 
 function esconder() {
