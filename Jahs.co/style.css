@@ -13,7 +13,7 @@ body{
 #display {
     font: bold 70pt 'Rock Salt', Arial;
     text-align: center; 
-    cursor: pointer;
+    cursor: pointer; 
     margin-top: -70px;  
 }
 
